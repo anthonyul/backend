@@ -1,0 +1,11 @@
+package com.registrobd.demo.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.registrobd.demo.model.User;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+	
+	@SuppressWarnings("unchecked")
+	User save(User user);
+}
