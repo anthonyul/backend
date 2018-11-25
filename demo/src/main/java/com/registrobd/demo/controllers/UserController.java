@@ -34,7 +34,7 @@ public class UserController {
 					"Los campos obligatorios no estan diligenbciados");
 		}	
 		this.userService.save(user);
-		return new RestResponse(HttpStatus.OK.value(),"Operacion Exitosa");
+		return new RestResponse(HttpStatus.OK.value(),"Operacion Exitosa wiiiii");
 	}
 	@RequestMapping(value="/getUsers", method=RequestMethod.GET)
 	public List<User> getUsers() {
